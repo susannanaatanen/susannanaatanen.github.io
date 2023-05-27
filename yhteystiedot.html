@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Where is She?</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Susanna Näätänen">
+    <meta name="keywords" content="matkailu matkakuvat matkustaa matkasivut">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link rel="icon" href="../tyopaketti1/images/favicon.jpg">
+    <link rel="stylesheet" type="text/css" href="css/tyylit.css">
+    
+<!--Boostrap files-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+        <!--Yksi rivi ja kaksi saraketta, jossa vasemmalle sivun logo/nimi ja oikealle navigointipalkki-->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+              <a class="navbar-brand" href="index.html"><img src="img/icons/icon.jpg" height="100px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-expanded="true">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse collapse show justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="../lopputyo/infosivu.html">Infosivu</a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="../lopputyo/kuvagalleria.html">Kuvagalleria</a>
+                  </li>    
+                  <li class="nav-item"><a class="nav-link" href="../lopputyo/yhteystiedot.html">Yhteystiedot</a>
+                  </li>   
+                </ul>
+              </div>
+            
+    </nav>
+    <header class="header">
+            <div class="container-fluid header p-5 text-center">
+                    <!--Yksi rivi header otsikkoteksti-->
+                <h2><i> Mikäli mieleen nousee kommentoitavaa tai kysyttävää, otan ilolla vastaan yhteydenottosi &#128525</i></h2>
+            </div>
+    </header>
+    <main class="main">
+      <div class="container1">
+        <div class="box1">
+        </div>    
+
+        <div class="box2">
+          <form class="row justify-content-center text-center p-5">
+                  <label for="nimi">Nimesi:</label>
+                      <input type="text" id="nimi" name="nimi" style="width:80%;" required autofocus>
+              <p></p>
+                  <label for="viesti">Viestisi:</label>
+                      <textarea rows="12" placeholder="Kirjoita tähän viestisi" id="viesti" name="viesti" style="height: max-content; width: 80%"></textarea>
+          </form>
+          <p></p>
+              <form class="row justify-content-center text-center">
+                <p>Toivotko yhteydenottoa sähköpostitse?</p>
+                      <input type="radio" id="kylla" name="saannot" value="kylla" required>
+                      <label for="kylla">Kyllä</label>
+                      <input type="radio" id="ei" name="saannot" value="ei" required>
+                      <label for="ei">Ei</label>
+                <p></p>
+
+                <label for="sposti">Sähköposti:</label>
+                      <input type="email" id="sposti" name="sposti" style="width: 80%;" required>
+                      <p></p>
+                      <button type="submit" class="btn" style="background-color:#C5D7D9; color:black;width: 25%; border-color:dimgrey;">Lähetä</button>
+              </form>
+        </div>
+
+        <div class="box3">
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid footer">
+            <!--Footer jossa insta ja linkedin linkit ikoneihin plus all rights reserved hommeli -->
+            <div class="col">
+                <h4>Löydät minut myös täältä:</h4>
+                    <a href="https://www.instagram.com/noorasuskin/" target="_blank" title="Instagram"><span class="fa fa-instagram fa-2x ga-right" style="color: orange;"></span></a>
+                    <a href="https://www.linkedin.com/in/susanna-n%C3%A4%C3%A4t%C3%A4nen-419415196/?originalSubdomain=fi" target="_blank" title="LinkedIn" style="color: orange;"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+                    <br><br>
+            <div class="col">
+            <h5>Copyright © 2023 Susanna Näätänen - Website Design by me</h5>
+                </div>
+         </div>
+    </footer>
+</body>
+
+
+
+</html>

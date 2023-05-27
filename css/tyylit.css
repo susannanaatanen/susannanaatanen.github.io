@@ -1,0 +1,145 @@
+* {
+        box-sizing: border-box;
+        font-family: 'Courier New', Courier, monospace;
+}
+body {
+        margin: 0;
+        padding: 2px;
+        background-image: url(../img/icons/background.png);
+}
+.header {
+        text-align: center;
+        background-color:#648882;
+        padding: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+p{
+        font-size: 16px;
+}   
+h1 {
+        font-size: 30px;
+        color:aliceblue;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.dropdown-menu {
+        font-size: 35px;
+        color:aliceblue;
+}
+.main {
+        margin: 15px;
+        padding: 60px;
+        height:fit-content; 
+}
+.navbar a {
+        font-size: 20px;
+        text-align: center;
+        float:left;
+        display: block;
+        padding: 14px 16px;
+        margin-right: 7px;
+        color: #73503C;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.navbar {
+        background-image: url(../img/icons/background.png);
+}
+.navbar a:hover {
+        background-color:#C5D7D9;
+        color: black;
+}
+.footer {
+    background-color:#2d4f51;
+    color:orange;
+    text-align: center;
+    padding: 35px;
+}
+
+/* infosivun esittelykuva */
+#omakuva {
+        width: 60%;
+        height: auto;
+        padding: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/*Kuvagallerian pääsivu, newspaper layout*/
+.newspaper {
+        column-count: 3;
+        column-gap: 40px;
+        column-rule: 4px double #005F65;
+        margin: 20px;
+        padding: 50px;
+}
+
+/* Malesian kuvagalleria flex-box */
+.row {
+        display: -ms-flexbox; 
+        display: flex;
+        -ms-flex-wrap: wrap; 
+        flex-wrap: wrap;
+        padding: 4px;
+}
+/* Kolme samankokoista saraketta */
+.column {
+        -ms-flex: 33%; 
+        flex: 33%;
+        max-width: 33%;
+        padding: 4px;
+      }
+      
+.column img {
+        margin-top: 18px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 55%;
+        height: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}  
+/* Responsiivinen layout, tekee kaksi riviä kolmen sijaan*/
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      
+/* Responsiivinen layout - tekee rivit päällekäin */
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+/*yhteydenottolomakkeen flex box layout*/
+.container1 {
+        display: flex;
+        align-items: stretch;
+}
+.container1 div {
+        padding: 20px;
+}
+.box1{
+        flex: 1;
+}
+.box2{
+        flex:2;
+        border: 1px;
+        border-style: solid;
+        color:#A6775B;
+        padding: 60px;
+}
+.box3{
+        flex:1;
+}
+
+#yhteydenotto {
+        padding: 60px;
+}
+/* Responsive layout */
+@media (max-width: 800px) {
+        .container1 {
+                  flex-direction: column;
+                }
+              }
